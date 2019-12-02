@@ -21,7 +21,7 @@ namespace MT.serverless
             log.LogInformation("Dreidel was spinned.");
 
             Random rand = new Random();
-            char result = _dreidelSites[rand.Next(_dreidelSites.Length)];
+            char result = _dreidelSites[rand.Next(_dreidelSites.Length - 1)];
 
             log.LogInformation($"Dreidel landed on {result}");
 
